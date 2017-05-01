@@ -10,7 +10,7 @@ import sys
 import math
 
 def _imgPreprocess ( imgFile, pcntDownsize ) :
-   # Read image1
+   # Read image
    image = cv2.imread( imgFile )
 
    # Perform the resizing of the image by pcntDownsize and create a Grayscale
@@ -338,8 +338,6 @@ if __name__ == "__main__":
 
    testDF = _fixMatrix( testDF, "set152", 3, 5, 2 )
    testDF = _fixMatrix( testDF, "set152", 5, 3, 2 )
-
-   # 162
 
    testDF = _fixMatrix( testDF, "set166", 2, 4, 3 )
    testDF = _fixMatrix( testDF, "set166", 4, 2, 3 )
